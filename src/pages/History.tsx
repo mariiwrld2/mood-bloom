@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Trash2, X, Calendar } from "lucide-react";
+import MoodChart from "@/components/MoodChart";
 import { getMoodHistory, deleteMoodEntry, type MoodEntry } from "@/lib/moodStorage";
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
@@ -28,6 +29,8 @@ export default function History() {
           {history.length} {history.length === 1 ? "entry" : "entries"} recorded
         </p>
       </motion.div>
+
+      <MoodChart history={history} />
 
       {history.length === 0 ? (
         <div className="text-center py-16 text-muted-foreground">
