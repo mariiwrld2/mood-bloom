@@ -12,8 +12,19 @@ export default {
         "2xl": "1400px",
       },
     },
+    fontFamily: {
+        sans: ['DM Sans', 'system-ui', 'sans-serif'],
+        display: ['Playfair Display', 'serif'],
+      },
     extend: {
       colors: {
+        mood: {
+          great: "hsl(var(--mood-great))",
+          good: "hsl(var(--mood-good))",
+          okay: "hsl(var(--mood-okay))",
+          bad: "hsl(var(--mood-bad))",
+          horrible: "hsl(var(--mood-horrible))",
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
