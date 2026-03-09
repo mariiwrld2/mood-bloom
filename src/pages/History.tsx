@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Trash2, X, Calendar } from "lucide-react";
+import MoodChart from "@/components/MoodChart";
 import { getMoodHistory, deleteMoodEntry, type MoodEntry } from "@/lib/moodStorage";
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
